@@ -13,9 +13,9 @@ public class CopyDemo {
             复制原理:从原文件中顺序读取每个字节并写入到另一个文件中
          */
         RandomAccessFile src
-                = new RandomAccessFile("image.jpg","r");
+                = new RandomAccessFile("driver.exe","r");
         RandomAccessFile desc
-                = new RandomAccessFile("image_cp.jpg","rw");
+                = new RandomAccessFile("driver_cp.exe","rw");
         /*
             image.jpg:
             00101101 11010101 10011010 01110101 10011010.....
