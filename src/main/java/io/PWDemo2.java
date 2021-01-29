@@ -22,8 +22,8 @@ public class PWDemo2 {
         BufferedWriter bw = new BufferedWriter(osw);
         //高级流，PW。负责按行写字符串，并可以自动行刷新
         PrintWriter pw = new PrintWriter(bw);
-        pw.println("和我在成都的街头走一走，哦哦哦哦~");
-        pw.println("直到所有的灯都熄灭了，也不停留。");
+        pw.println("子非鱼，焉知鱼之乐");
+        pw.println("诸将易得而，至入信者，国士无双。");
         System.out.println("写出完毕!");
         pw.close();
 
