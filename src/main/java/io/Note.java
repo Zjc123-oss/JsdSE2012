@@ -21,7 +21,12 @@ public class Note {
         OutputStreamWriter osw = new OutputStreamWriter(
                 fos,"UTF-8");
         BufferedWriter bw = new BufferedWriter(osw);
-        PrintWriter pw = new PrintWriter(bw);
+        /*
+            当创建PW时第一个参数为流，则可以再传入一个boolean型的参数
+            如果这个值为true，则当前PW具有自动行刷新功能。即:
+            每当我们调用println方法后会自动flush
+         */
+        PrintWriter pw = new PrintWriter(bw,true);
         System.out.println("请开始输入内容,单独输入exit退出");
         while(true){
             String line = scanner.nextLine();
